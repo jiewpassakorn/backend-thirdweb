@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mod-id-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mod-id-api
+    restart: unless-stopped
+    ports:
+      - '3001:3001'
